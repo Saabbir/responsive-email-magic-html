@@ -1,0 +1,178 @@
+{% set title = 'A Simple Responsive HTML Email' %}
+
+{% extends "base.njk" %}
+
+{% block content %}
+
+<!-- MAIN HTML EMAIL CONTAINER -->
+<table class="container-table" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0">
+
+  <!-- HEADER ROW -->
+  <tr class="header-row">
+    <td class="header" bgcolor="#c7d8a7">
+
+      <!-- HEADER LOGO -->
+      <table class="header__logo-table" width="70" align="left" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="header__logo-cell">
+            <img src="images/email.png" alt="Icon Email" width="70" height="" border="0">
+          </td>
+        </tr>
+      </table>
+
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="max-width-425" align="left" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="header__subtitle">Creating</td>
+              </tr>
+              <tr>
+                <td class="header__title">
+                  Responsive Email Magic
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr><!-- /.header-row -->
+
+  <!-- COPY ROW -->
+  <tr class="copy-row">
+    <td class="padding-30 border-bottom">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="copy-title">
+            Welcome to our responsive email!
+          </td>
+        </tr>
+        <tr>
+          <td class="body-copy">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet
+            blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in
+            posuere mauris neque at erat.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr><!-- /.copy-row -->
+
+  <!-- 2 COLUMN ROW -->
+  <tr class="2-column-row">
+    <td class="padding-30 border-bottom">
+      <table width="115" align="left" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="pr-20 pb-20">
+            <img src="images/responsive.png" width="115" height="" border="0" alt="Icon Responsive" />
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+      <td>
+      <![endif]-->
+      <table class="max-width-380" align="left" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="body-copy">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet
+                  blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies
+                  ipsum, in posuere mauris neque at erat.
+                </td>
+              </tr>
+              <tr>
+                <td class="pt-20">
+                  <table align="left" class="button-container" bgcolor="#e05443" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td class="button" height="45">
+                        <a href="#">Claim yours!</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr><!-- /.2-column-row -->
+
+  <!-- IMAGE ROW -->
+  <tr class="image-row">
+    <td class="padding-30 border-bottom">
+      <img src="images/wide.png" width="100%" border="0" alt="Wide Image">
+    </td>
+  </tr><!-- /.image-row -->
+
+  <!-- COPY ROW -->
+  <tr class="copy-row">
+    <td class="body-copy padding-30">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit
+      ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris
+      neque at erat.
+    </td>
+  </tr><!-- /.copy-row -->
+
+  <!-- FOOTER ROW -->
+  <tr class="footer-row">
+    <td class="footer-cell padding-30" bgcolor="#44525f">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        {# COPYRIGHT ROW #}
+        <tr>
+          <td align="center" class="footer-copy">
+            &reg; Someone, somewhere 2013<br />
+            <a href="#">
+              <font color="#ffffff">Unsubscribe</font>
+            </a> from this newsletter instantly
+          </td>
+        </tr>
+
+        {# SOCIAL ICON ROW #}
+        <tr>
+          <td class="pt-15" align="center">
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="px-10 social-icon-cell" width="33">
+                  <a href="http://www.facebook.com/username">
+                    <img src="images/facebook.png" width="33" height="33" alt="Facebook" border="0" />
+                  </a>
+                </td>
+                <td class="px-10 social-icon-cell" width="33">
+                  <a href="http://www.twitter.com/username">
+                    <img src="images/twitter.png" width="33" height="33" alt="Twitter" border="0" />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+    </td><!-- /.footer-cell -->
+  </tr><!-- /.footer-row -->
+
+</table><!-- /.container-table -->
+
+{% endblock %}
