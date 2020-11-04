@@ -1,5 +1,5 @@
 const PUBLISH_DIRECTORY = 'docs';
-const PREPEND_IMG_SRC_URL = 'https://saabbir.com/email-magic-html/';
+const PREPEND_IMG_SRC_URL = 'https://saabbir.com/responsive-email-magic-html/';
 
 const gulp = require('gulp');
 const sass = require('gulp-sass');
